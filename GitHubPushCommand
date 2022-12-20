@@ -1,0 +1,8 @@
+"""
+Command to push to github
+git remote add origin https://github.com/RomanB601/Random_projects_Roman_Age-16.git
+git branch -M main
+git push -u origin main
+
+* right click a file and add to gitinore to not add it to the repository
+"""
