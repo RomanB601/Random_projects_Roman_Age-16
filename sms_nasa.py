@@ -3,7 +3,7 @@ import json
 import os
 from twilio.rest import Client
 
-i = 1
+
 response = requests.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
 o2 = response.json()
 pic = o2["url"]
