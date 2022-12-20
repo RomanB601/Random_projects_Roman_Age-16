@@ -1,0 +1,26 @@
+import time
+
+def main():
+    array = [1,2,3,4,5,6,7,8,9,10]
+    target = 8
+    print(binary_search(array,target))
+
+def binary_search(arr,tar):
+    t0 = time.time()
+    high = len(arr)
+    low = 0
+    while low<=high:
+        mid = int((low+high)/2)
+        if arr[mid] == tar: 
+            t1 = time.time()
+            total = t1-t0
+            print(f"Index of target:{mid}")
+            return f"Time:{total}"
+        elif arr[mid] > tar: high = mid -1
+        elif arr[mid]< tar: low = mid+1
+    t1 = time.time()
+    total = t1-t0
+    print(total)
+    return -1
+
+main()
